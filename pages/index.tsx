@@ -1,9 +1,10 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+
+import { Home } from "../components/Home";
 import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
+export default function HomePage() {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,9 +12,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Book the Slingshot experience!" />
       </Head>
 
-      <h1>ok</h1>
+      <Home />
     </div>
   );
-};
-
-export default Home;
+}

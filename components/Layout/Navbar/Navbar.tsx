@@ -1,26 +1,25 @@
-import styles from './Navbar.module.scss'
+import styles from "./Navbar.module.scss";
 
 export function Navbar() {
-    return (
-      <nav className={styles.Navbar}>
-        <h1>Logo</h1>
+  return (
+    <nav className={styles.Navbar}>
+      <h1>Logo</h1>
 
-        <div className={styles.NavLinks}>
+      <div className={styles.NavLinks}>
         <ul>
           <li>
-            <a
-              href="https://github.com/chilucdiep/Spacestagram"
-              target="_blank"
-            >
-              Code
+            <a href="/">
+              Home
             </a>
           </li>
           <li>
-            <a
-              href="https://www.figma.com/file/dkV2MEJPPmGWdl1vvfaPs4/Spacestagram?node-id=0%3A1"
-              target="_blank"
-            >
-              Design
+            <a href="/about">
+              About us
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              Book online
             </a>
           </li>
         </ul>
@@ -28,16 +27,12 @@ export function Navbar() {
 
       <div className={styles.NavActions}>
         <ul>
-          <li>
-
-              FR
-          </li>
+          <li>FR</li>
           <li>
             <button>book</button>
           </li>
         </ul>
       </div>
-      </nav>
-    );
-  }
-  
+    </nav>
+  );
+}
