@@ -6,7 +6,7 @@ function About() {
       <Head>
         <title>Vroom 2 | About Us</title>
         <meta name="description" content="Book the Slingshot experience!" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <h1>About</h1>
     </div>
