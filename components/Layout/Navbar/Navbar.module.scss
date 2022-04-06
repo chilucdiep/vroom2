@@ -1,41 +1,41 @@
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5em;
-    padding-bottom: 2em;
-  
-    .Logo {
-      max-width: 200px;
-  
-      @media (max-width: 700px) {
-        max-width: 100px;
-      }
-    }
-  
-    a {
-      cursor: pointer;
-    }
-  
-    ul {
-      display: flex;
-  
-      li {
-        margin-right: 4em;
-        transition: all 0.1s ease-in-out;
-  
-        @media (max-width: 700px) {
-          margin-right: 1.5em;
-        }
-  
-        &:hover {
-          opacity: 0.7;
-        }
-      }
-  
-      li:last-child {
-        margin-right: 0;
-      }
+  width: clamp(350px, 100%, 1200px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  padding-bottom: 2em;
+
+  .Logo {
+    max-width: 200px;
+
+    @media (max-width: 700px) {
+      max-width: 100px;
     }
   }
-  
+
+  a {
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 4em;
+      transition: all 0.1s ease-in-out;
+
+      @media (max-width: 700px) {
+        margin-right: 1.5em;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+}
