@@ -32,7 +32,7 @@ export function Navbar() {
       </Link>
 
       <div>
-        <ul>
+        <ul className={styles.NavLinks}>
           <li>
             <Link href={URL.HOME}>
               <a className={HomeClasses}>Home</a>
