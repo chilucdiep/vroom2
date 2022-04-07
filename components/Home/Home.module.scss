@@ -1,11 +1,13 @@
 @import "../../styles/variables.scss";
 
 .Home {
-  width: clamp(350px, 90%, 1200px);
-  margin: 0 auto;
+  display: grid;
+  place-items: center;
 
   .Hero {
     position: relative;
+    width: clamp(350px, 90%, 1200px);
+    margin: 0 auto;
 
     .HeroContent {
       @media (min-width: 700px) {
@@ -76,11 +78,75 @@
 
   .Features {
     margin: 5em 0;
+    width: clamp(350px, 90%, 1200px);
     display: grid;
     place-items: center;
 
     @media (min-width: 1200px) {
-        margin: 10em 0;
+      margin: 10em 0;
+    }
+
+    .Grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6em;
+      margin-top: 5em;
+
+      .Icon {
+        background-color: $White;
+        box-shadow: $Shadow;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+      }
+
+      h3 {
+        margin: 2em 0 1em;
+      }
+    }
+  }
+
+  .Info {
+    position: relative;
+
+    .InfoContainer {
+      width: clamp(350px, 90%, 1200px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 8.5em auto;
+
+      .Right {
+        width: clamp(300px, 100%, 900px);
+        margin-left: 15em;
+
+          p {
+              margin: 3em 0;
+          }
+      }
+    }
+
+    .Backsplash > * {
+      position: absolute;
+      font-weight: 900;
+      font-size: 130px;
+      line-height: 160%;
+      letter-spacing: 0.27em;
+      text-transform: uppercase;
+      color: #f0f0f0;
+      z-index: -1;
+    }
+
+    .Slingshot {
+      top: 0;
+      left: 0;
+    }
+
+    .Effect {
+      top: 70%;
+      right: 0;
     }
   }
 }

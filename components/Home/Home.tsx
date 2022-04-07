@@ -1,3 +1,4 @@
+import Info from "./Info";
 import Features from "./Features";
 import Hero from "./Hero";
 
@@ -8,6 +9,7 @@ export function Home() {
     <main className={styles.Home}>
       <Hero />
       <Features />
+      <Info />
       <section>reviews</section>
     </main>
   );

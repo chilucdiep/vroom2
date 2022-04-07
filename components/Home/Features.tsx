@@ -11,20 +11,21 @@ export default function Features() {
       <h1>What we offer</h1>
       <div className={styles.Grid}>
         <GridItem
-          image={SpeedIcon}
+          icon={SpeedIcon}
+          iconWidth={35}
           title="Slingshot bahay"
           text="Our Slingshot looks, sounds, and drives like nothing else on the road. Leave four wheels behind and make your mark on the open road.
 "
         />
         <GridItem
-          image={HomeIcon}
+          icon={HomeIcon}
           title="Easy renting bahay"
           text="Our Slingshot looks, sounds, and drives like nothing else on the road. Leave four wheels behind and make your mark on the open road.
 
 "
         />
         <GridItem
-          image={CheckIcon}
+          icon={CheckIcon}
           title="No special license required!"
           text="Our Slingshot looks, sounds, and drives like nothing else on the road. Leave four wheels behind and make your mark on the open road.
 "
@@ -37,14 +38,15 @@ export default function Features() {
 interface GridItemProps {
   title: string;
   text: string;
-  image: HTMLImageElement;
+  icon: HTMLImageElement;
+  iconWidth?: number;
 }
 
-function GridItem({ text, title, image }: GridItemProps) {
+function GridItem({ text, title, icon, iconWidth = 25 }: GridItemProps) {
   return (
     <div className={styles.GridItem}>
       <div className={styles.Icon}>
-        <Image src={image} alt="Icon" />
+        <Image src={icon} alt="Icon" width={iconWidth} />
       </div>
       <h3>{title}</h3>
       <p>{text}</p>
