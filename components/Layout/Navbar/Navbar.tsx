@@ -1,26 +1,23 @@
+import Image from "next/image";
+import Logo from "../../../images/Logo.svg";
+import { Button } from "../../Button";
 import styles from "./Navbar.module.scss";
 
 export function Navbar() {
   return (
     <nav className={styles.Navbar}>
-      <h1>Logo</h1>
+      <Image src={Logo} alt="Vroom2 Logo" width={130} />
 
       <div className={styles.NavLinks}>
         <ul>
           <li>
-            <a href="/">
-              Home
-            </a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/about">
-              About us
-            </a>
+            <a href="/about">About us</a>
           </li>
           <li>
-            <a href="/">
-              Book online
-            </a>
+            <a href="/">Book online</a>
           </li>
         </ul>
       </div>
@@ -29,7 +26,7 @@ export function Navbar() {
         <ul>
           <li>FR</li>
           <li>
-            <button>book</button>
+            <Button label="Book a Ride" />
           </li>
         </ul>
       </div>

@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+
+.Button {
+  color: $White;
+  background-color: $Black;
+  padding: 0.9em 1.9em;
+  border-radius: $BorderRadius;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.light {
+  color: $Black;
+  background-color: $White;
+}

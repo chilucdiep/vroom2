@@ -1,18 +1,10 @@
 .Navbar {
-  width: clamp(350px, 100%, 1200px);
+  width: clamp(350px, 90%, 1200px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5em;
+  height: 6em;
   padding-bottom: 2em;
-
-  .Logo {
-    max-width: 200px;
-
-    @media (max-width: 700px) {
-      max-width: 100px;
-    }
-  }
 
   a {
     cursor: pointer;
@@ -20,6 +12,7 @@
 
   ul {
     display: flex;
+    align-items: center;
 
     li {
       margin-right: 4em;
