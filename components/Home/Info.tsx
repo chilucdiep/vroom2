@@ -15,7 +15,7 @@ export default function Info() {
           <h1>Your adventure awaits!</h1>
           <p>
             Drive with style and drive with confidence: With exterior
-            refinements that make a new look from every angle, it's easy to make
+            refinements that make a new look from every angle, it is easy to make
             a statement.
             <br />
             <br />
