@@ -5,12 +5,14 @@ import styles from "./Button.module.scss";
 interface ButtonProps {
   label: string;
   light?: boolean;
+  secondary?: boolean;
   route: string;
 }
 
-export function Button({ label, light, route }: ButtonProps) {
+export function Button({ label, light, secondary, route }: ButtonProps) {
   const classes = classNames(styles.Button, {
     [styles.light]: light,
+    [styles.secondary]: secondary,
   });
 
   return (

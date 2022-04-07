@@ -38,11 +38,19 @@ a {
   }
 }
 
+.Gradient {
+  background-image: $Gradient;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 .BigTitle {
   font-size: 40px;
   font-weight: 900;
-  line-height: 160.9%;
+  line-height: 150%;
   letter-spacing: 0.27em;
+  text-transform: uppercase;
 }
 
 .BigCaption {

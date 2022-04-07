@@ -19,7 +19,11 @@
   }
 }
 
-.light {
+.light, .secondary {
   color: $Black;
   background-color: $White;
+}
+
+.secondary {
+  border: 2px solid $Black;
 }

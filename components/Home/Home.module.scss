@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.Home {
+  width: clamp(350px, 90%, 1200px);
+  margin: 0 auto;
+
+  .Hero {
+    position: relative;
+    padding-bottom: 5em;
+
+    .HeroContent {
+      display: flex;
+
+      .Left {
+        margin-top: 5.5em;
+        max-width: 45em;
+
+        p {
+          margin: 2em 0;
+          max-width: 28em;
+        }
+
+        .Actions {
+          display: flex;
+          gap: 1em;
+          max-width: 25em;
+        }
+      }
+
+      img {
+        padding-left: 15em;
+      }
+    }
+
+    .SocialProof {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      display: flex;
+      gap: 3em;
+      background-color: $White;
+      padding: 3em 5em;
+      box-shadow: $Shadow;
+      border-radius: $BorderRadius;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
