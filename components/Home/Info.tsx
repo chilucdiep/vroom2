@@ -14,10 +14,15 @@ export default function Info() {
         <div className={styles.Right}>
           <h1>Your adventure awaits!</h1>
           <p>
-            Our Slingshot looks, sounds, and drives like nothing else on the
-            road. Leave four wheels behind and make your mark on the open road.
-            Our Slingshot looks, sounds, and drives like nothing else on the
-            road. Leave four wheels behind and make your mark on the open road.
+            Drive with style and drive with confidence: With exterior
+            refinements that make a new look from every angle, it's easy to make
+            a statement.
+            <br />
+            <br />
+            Drivers and passengers get a front-row seat to every twist and turn.
+            With a low center of gravity, open cockpit, and one rear wheel
+            launching you forward, the Slingshot is built to turn the open road
+            into your greatest adventure yet.
           </p>
           <Button label="Go for a ride" route={URL.BOOK} />
         </div>

@@ -1,5 +1,5 @@
 import Info from "./Info";
-import Features from "./Features";
+import { Features } from "../Features";
 import Hero from "./Hero";
 
 import styles from "./Home.module.scss";

@@ -3,9 +3,9 @@ import Image from "next/image";
 import SpeedIcon from "../../images/SpeedIcon.svg";
 import HomeIcon from "../../images/HomeIcon.svg";
 import CheckIcon from "../../images/CheckIcon.svg";
-import styles from "./Home.module.scss";
+import styles from "./Features.module.scss";
 
-export default function Features() {
+export function Features() {
   return (
     <section className={styles.Features}>
       <h1>What we offer</h1>

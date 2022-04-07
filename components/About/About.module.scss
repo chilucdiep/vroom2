@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.About {
+  display: grid;
+  place-items: center;
+  margin: 8em 0 5em;
+
+  .Hero {
+    width: clamp(350px, 90%, 1200px);
+    text-align: center;
+
+    h1 {
+        margin: .5em 0 1.5em;
+    }
+
+    p {
+      max-width: 400px;
+      margin: auto;
+    }
+  }
+}
