@@ -10,12 +10,42 @@
     text-align: center;
 
     h1 {
-        margin: .5em 0 1.5em;
+      margin: 0.5em 0 1.5em;
     }
 
     p {
       max-width: 400px;
       margin: auto;
+    }
+  }
+
+  .Cards {
+    width: clamp(350px, 90%, 1200px);
+    display: grid;
+    gap: 5em;
+
+    @media (min-width: 950px) {
+      display: flex;
+    }
+
+    .Card {
+      display: flex;
+      background-color: $White;
+      box-shadow: $Shadow;
+      border-radius: $BorderRadius;
+
+      .Img {
+        border-radius: $BorderRadius 0 0 $BorderRadius;
+        overflow: hidden;
+      }
+
+      .Text {
+        padding: 4em 2em;
+
+        h3 {
+          margin: 1em 0;
+        }
+      }
     }
   }
 }

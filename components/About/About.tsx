@@ -1,3 +1,4 @@
+import Cards from "./Cards";
 import { Features } from "../Features";
 import Hero from "./Hero";
 
@@ -8,6 +9,7 @@ export function About() {
     <main className={styles.About}>
       <Hero />
       <Features />
+      <Cards />
     </main>
   );
 }
