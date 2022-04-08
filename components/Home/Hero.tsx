@@ -4,6 +4,8 @@ import { URL } from "../../utils/constants/url";
 import { Button } from "../Button";
 
 import HeroImage from "../../images/HeroImage.svg";
+import StarFilledIcon from "../../images/StarFilledIcon.svg";
+import StarHalfIcon from "../../images/StarHalfIcon.svg";
 import styles from "./Home.module.scss";
 
 export default function Hero() {
@@ -30,6 +32,13 @@ export default function Hero() {
       </section>
       <section className={styles.SocialProof}>
         <div>
+          <div className={styles.Ratings}>
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarHalfIcon} alt="Star" height={18} />
+          </div>
           <h3>Jonathan Papadakos</h3>
           <p>
             We had a great ride with the car! We rented the helmets as well and
@@ -37,17 +46,30 @@ export default function Hero() {
           </p>
         </div>
         <div>
-          <h3>Jonathan Papadakos</h3>
+          <div className={styles.Ratings}>
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+          </div>
+          <h3>Marie-Ève Landry</h3>
           <p>
-            We had a great ride with the car! We rented the helmets as well and
-            they were very comfortable.
+            Great service! My husband really loved the car and the experience.
           </p>
         </div>
         <div>
-          <h3>Jonathan Papadakos</h3>
+          <div className={styles.Ratings}>
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+            <Image src={StarFilledIcon} alt="Star" height={18} />
+          </div>
+          <h3>Raj Tulit</h3>
           <p>
-            We had a great ride with the car! We rented the helmets as well and
-            they were very comfortable.
+            100% would recommend! Very easy to rent the vehicle and the whole
+            process was smooth.
           </p>
         </div>
       </section>

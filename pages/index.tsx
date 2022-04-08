@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Vroom 2 | Slingshot Rental</title>
+        <title>Vroom 2 | The Slingshot Experience</title>
         <meta name="description" content="Book the Slingshot experience!" />
       </Head>
 

@@ -56,10 +56,11 @@
       position: absolute;
       bottom: 0;
       z-index: 1;
-      display: flex;
-      gap: 3em;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4em;
       background-color: $White;
-      padding: 3em 5em;
+      padding: 3em 5em 2em;
       box-shadow: $Shadow;
       border-radius: $BorderRadius;
       width: 90%;
@@ -70,8 +71,14 @@
         display: none;
       }
 
+      .Ratings {
+        display: flex;
+        gap: .2em;
+        opacity: .9;
+      }
+
       h3 {
-        margin: 1em 0;
+        margin: .5em 0 1em;
       }
     }
   }
