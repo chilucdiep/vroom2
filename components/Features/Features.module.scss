@@ -12,9 +12,12 @@
 
   .Grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 6em;
     margin-top: 5em;
+
+    @media (min-width: 700px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .Icon {
       background-color: $White;
