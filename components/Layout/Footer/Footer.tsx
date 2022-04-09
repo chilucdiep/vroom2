@@ -37,13 +37,13 @@ export function Footer() {
           <li>
             <h2>Follow us</h2>
             <Link href="https://www.instagram.com/vroom2rental/">
-              <a>Instagram</a>
+              <a target="_blank">Instagram</a>
             </Link>
             <Link href="https://www.instagram.com/vroom2rental/">
-              <a>TikTok</a>
+              <a target="_blank">TikTok</a>
             </Link>
             <Link href="https://www.instagram.com/vroom2rental/">
-              <a>Facebook</a>
+              <a target="_blank">Facebook</a>
             </Link>
           </li>
           <li>
@@ -63,7 +63,7 @@ export function Footer() {
           <p>
             Website designed & built by{" "}
             <Link href="https://chilucdiep.com/">
-              <a>
+              <a target="_blank">
                 <b>Chi-Luc Diep</b>
               </a>
             </Link>

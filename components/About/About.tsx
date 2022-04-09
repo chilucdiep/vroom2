@@ -1,3 +1,4 @@
+import Faq from "./Faq";
 import Cards from "./Cards";
 import { Features } from "../Features";
 import Hero from "./Hero";
@@ -10,6 +11,7 @@ export function About() {
       <Hero />
       <Features />
       <Cards />
+      <Faq />
     </main>
   );
 }
