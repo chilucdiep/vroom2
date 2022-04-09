@@ -50,8 +50,30 @@
   }
 
   .Faq {
-    margin: 5em;
+    width: clamp(350px, 90%, 1200px);
+    margin: 5em 0;
     display: flex;
     gap: 10%;
+    font-family: "Montserrat", sans-serif;
+
+    .FaqTitle {
+      width: 1300px !important;
+    }
+
+    .Accordion {
+      box-shadow: none;
+      padding: 1em 0;
+      background-color: $MainBackground;
+      border-bottom: 3px solid $Grey;
+    }
+
+    .Question {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+    }
+
+    .Answer {
+      font-family: "Montserrat", sans-serif;
+    }
   }
 }

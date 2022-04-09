@@ -2,14 +2,14 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import styles from "../About/About.module.scss";
 
 export default function Faq() {
   return (
     <section className={styles.Faq}>
-      <h1>
+      <h1 className={styles.FaqTitle}>
         You ask, We <span className="Gradient">answer</span>
       </h1>
       <div>
@@ -51,16 +51,16 @@ interface QuestionProps {
 
 function Question({ question, answer }: QuestionProps) {
   return (
-    <Accordion>
+    <Accordion className={styles.Accordion}>
       <AccordionSummary
-        //   expandIcon={<ExpandMoreIcon />}
+        expandIcon={<ExpandMoreIcon />}
         aria-controls="panel2a-content"
         id="panel2a-header"
       >
-        <Typography>{question}</Typography>
+        <Typography className={styles.Question}>{question}</Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography>{answer}</Typography>
+        <Typography className={styles.Answer}>{answer}</Typography>
       </AccordionDetails>
     </Accordion>
   );
