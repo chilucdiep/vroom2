@@ -73,12 +73,12 @@
 
       .Ratings {
         display: flex;
-        gap: .2em;
-        opacity: .9;
+        gap: 0.2em;
+        opacity: 0.9;
       }
 
       h3 {
-        margin: .5em 0 1em;
+        margin: 0.5em 0 1em;
       }
     }
   }
@@ -130,6 +130,42 @@
     .Effect {
       top: 70%;
       right: 0;
+    }
+  }
+
+  .Reviews {
+    width: clamp(350px, 90%, 1200px);
+    display: grid;
+    place-items: center;
+    gap: 5em;
+    margin: 2em 0 10em;
+
+    .Cards {
+      display: grid;
+      gap: 3em;
+
+      @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .Card {
+        background-color: $White;
+        border-radius: $BorderRadius;
+        box-shadow: $Shadow;
+        padding: 3em 2em;
+
+        .Ratings {
+          margin-bottom: 1em;
+        }
+
+        .Img {
+          border-radius: 50%;
+        }
+
+        h3 {
+          margin: 1em 0;
+        }
+      }
     }
   }
 }

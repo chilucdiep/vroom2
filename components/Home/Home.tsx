@@ -1,3 +1,4 @@
+import Reviews from "./Reviews";
 import Info from "./Info";
 import { Features } from "../Features";
 import Hero from "./Hero";
@@ -10,7 +11,7 @@ export function Home() {
       <Hero />
       <Features />
       <Info />
-      <section>reviews</section>
+      <Reviews />
     </main>
   );
 }

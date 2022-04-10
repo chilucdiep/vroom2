@@ -16,7 +16,7 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      opacity: .1;
+      opacity: 0.1;
     }
 
     h1 {
@@ -62,12 +62,12 @@
   .Faq {
     width: clamp(350px, 90%, 1200px);
     margin: 5em 0;
-    display: flex;
+    display: grid;
     gap: 10%;
     font-family: "Montserrat", sans-serif;
 
-    .FaqTitle {
-      width: 1300px !important;
+    @media (min-width: 700px) {
+      grid-template-columns: 16em 1fr;
     }
 
     .Accordion {
@@ -75,6 +75,10 @@
       padding: 1em 0;
       background-color: $MainBackground;
       border-bottom: 3px solid $Grey;
+
+      &::before {
+        display: none;
+      }
     }
 
     .Question {
