@@ -8,6 +8,16 @@
   .Hero {
     width: clamp(350px, 90%, 1200px);
     text-align: center;
+    position: relative;
+
+    .BackSplash {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: .1;
+    }
 
     h1 {
       margin: 0.5em 0 1.5em;
