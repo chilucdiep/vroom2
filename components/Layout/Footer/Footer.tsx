@@ -25,8 +25,8 @@ export function Footer() {
 
           <li>
             <h2>Contact us</h2>
-            <Link href="514-371-1272">
-              <a>514-371-1272</a>
+            <Link href="438-700-9091">
+              <a>438-700-9091</a>
             </Link>
             <Link href="vroom2rental@gmail.com">
               <a>vroom2rental@gmail.com</a>
