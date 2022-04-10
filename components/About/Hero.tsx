@@ -11,8 +11,8 @@ export default function Hero() {
       </div>
       <h3>Vroom2 isn’t just any ordinary car rental company</h3>
       <h1 className="BigTitle">
-        WE ARE AN <span className="Gradient">ACTIVE LIFESTYLE</span> VEHICLE
-        RENTAL COMPANY
+        WE ARE AN EXCLUSIVE EXPERIENCE{" "}
+        <span className="Gradient">ACTIVE LIFESTYLE</span> VEHICLE COMPANY
       </h1>
       <p>
         Our mission is to provide an unique and exhilarating experience to our

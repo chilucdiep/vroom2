@@ -40,10 +40,7 @@ export default function Hero() {
             <Image src={StarHalfIcon} alt="Star" height={18} />
           </div>
           <h3>Jonathan Papadakos</h3>
-          <p>
-            We had a great ride with the car! We rented the helmets as well and
-            they were very comfortable.
-          </p>
+          <p>We had a great ride with the car! Awesome experience thanks!</p>
         </div>
         <div>
           <div className={styles.Ratings}>
