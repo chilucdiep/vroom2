@@ -78,7 +78,7 @@
       }
 
       h3 {
-        margin: 0.5em 0 1em;
+        margin-bottom: 1em;
       }
     }
   }
@@ -153,10 +153,6 @@
         border-radius: $BorderRadius;
         box-shadow: $Shadow;
         padding: 3em 2em;
-
-        .Ratings {
-          margin-bottom: 1em;
-        }
 
         .Img {
           border-radius: 50%;

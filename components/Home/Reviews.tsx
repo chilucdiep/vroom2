@@ -1,7 +1,8 @@
 import Image from "next/image";
 
+import { Ratings } from "../Ratings";
+
 import Img from "../../images/Img.png";
-import StarFilledIcon from "../../images/StarFilledIcon.svg";
 import styles from "./Home.module.scss";
 
 export default function Reviews() {
@@ -12,14 +13,17 @@ export default function Reviews() {
       </h1>
       <div className={styles.Cards}>
         <Card
+          stars={5}
           name="Sandra Beaumont"
           review="Rented the Slingshot for our anniversary, safe to say my boyfriend loved it."
         />
         <Card
+          stars={5}
           name="George El Khoury"
           review="We drove the car to Mont-Tremblant for a weekend getaway. Made the ride very fun and memorable."
         />
         <Card
+          stars={3.2}
           name="Kevin Nguyen"
           review="We pushed our parents to rent the car. They really enjoyed their day with it. Very clean and very smooth rental experience."
         />
@@ -29,28 +33,22 @@ export default function Reviews() {
 }
 
 interface CardProps {
+  stars: number;
   name: string;
   review: string;
   image?: HTMLImageElement;
 }
 
-function Card({ name, review, image }: CardProps) {
+function Card({ stars, name, review, image }: CardProps) {
   return (
     <div className={styles.Card}>
-      <div className={styles.Ratings}>
-        <Image src={StarFilledIcon} alt="Star" height={18} />
-        <Image src={StarFilledIcon} alt="Star" height={18} />
-        <Image src={StarFilledIcon} alt="Star" height={18} />
-        <Image src={StarFilledIcon} alt="Star" height={18} />
-        <Image src={StarFilledIcon} alt="Star" height={18} />
-      </div>
+      <Ratings stars={stars} />
       <Image
         src={Img}
-        alt="Adventures"
+        alt="Reviewer"
         className={styles.Img}
         width={70}
         height={70}
-        objectFit="cover"
       />
       <div className={styles.Text}>
         <h3>{name}</h3>

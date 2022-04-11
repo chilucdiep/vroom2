@@ -7,6 +7,7 @@ import HeroImage from "../../images/HeroImage.svg";
 import StarFilledIcon from "../../images/StarFilledIcon.svg";
 import StarHalfIcon from "../../images/StarHalfIcon.svg";
 import styles from "./Home.module.scss";
+import { Ratings } from "../Ratings";
 
 export default function Hero() {
   return (
@@ -31,45 +32,39 @@ export default function Hero() {
         </div>
       </section>
       <section className={styles.SocialProof}>
-        <div>
-          <div className={styles.Ratings}>
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarHalfIcon} alt="Star" height={18} />
-          </div>
-          <h3>Jonathan Papadakos</h3>
-          <p>We had a great ride with the car! Awesome experience thanks!</p>
-        </div>
-        <div>
-          <div className={styles.Ratings}>
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-          </div>
-          <h3>Marie-Ève Landry</h3>
-          <p>
-            Great service! My husband really loved the car and the experience.
-          </p>
-        </div>
-        <div>
-          <div className={styles.Ratings}>
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-            <Image src={StarFilledIcon} alt="Star" height={18} />
-          </div>
-          <h3>Raj Tulit</h3>
-          <p>
-            100% would recommend! Very easy to rent the vehicle and the whole
-            process was smooth.
-          </p>
-        </div>
+        <Reviews
+          stars={4.2}
+          name="Jonathan Papadakos"
+          review="We had a great ride with the car! Awesome experience thanks!"
+        />
+        <Reviews
+          stars={5}
+          name="Marie-Ève Landry"
+          review="Great service! My husband really loved the car and the experience."
+        />
+        <Reviews
+          stars={5}
+          name="Raj Tulit"
+          review="100% would recommend! Very easy to rent the vehicle and the whole
+          process was smooth."
+        />
       </section>
     </section>
+  );
+}
+
+interface ReviewsProps {
+  stars: number;
+  name: string;
+  review: string;
+}
+
+function Reviews({ stars, name, review }: ReviewsProps) {
+  return (
+    <div>
+      <Ratings stars={stars} />
+      <h3>{name}</h3>
+      <p>{review}</p>
+    </div>
   );
 }
