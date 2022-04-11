@@ -120,16 +120,29 @@
       text-transform: uppercase;
       color: #f0f0f0;
       z-index: -1;
+
+      @media (max-width: 700px) {
+        font-size: 50px;
+      }
     }
 
     .Slingshot {
       top: 0;
       left: 0;
+
+      @media (max-width: 700px) {
+        top: 50%;
+      }
     }
 
     .Effect {
       top: 70%;
       right: 0;
+
+
+      @media (max-width: 700px) {
+        top: 63%;
+      }
     }
   }
 
