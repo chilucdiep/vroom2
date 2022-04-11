@@ -12,16 +12,16 @@ export default function Reviews() {
       </h1>
       <div className={styles.Cards}>
         <Card
-          name="John Doe"
-          review="Our Slingshot looks, sounds, and drives like nothing else on the road. Leave four wheels behind and make your mark on the open road."
+          name="Sandra Beaumont"
+          review="Rented the Slingshot for our anniversary, safe to say my boyfriend loved it."
         />
         <Card
-          name="John Doe"
-          review="Our Slingshot looks, sounds, and drives like nothing else on the road. Leave four wheels behind and make your mark on the open road."
+          name="George El Khoury"
+          review="We drove the car to Mont-Tremblant for a weekend getaway. Made the ride very fun and memorable."
         />
         <Card
-          name="John Doe"
-          review="Our Slingshot looks, sounds, and drives like nothing else on the road. Leave four wheels behind and make your mark on the open road."
+          name="Kevin Nguyen"
+          review="We pushed our parents to rent the car. They really enjoyed their day with it. Very clean and very smooth rental experience."
         />
       </div>
     </section>
