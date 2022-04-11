@@ -23,7 +23,7 @@ export default function Reviews() {
           review="We drove the car to Mont-Tremblant for a weekend getaway. Made the ride very fun and memorable."
         />
         <Card
-          stars={3.2}
+          stars={4.2}
           name="Kevin Nguyen"
           review="We pushed our parents to rent the car. They really enjoyed their day with it. Very clean and very smooth rental experience."
         />
