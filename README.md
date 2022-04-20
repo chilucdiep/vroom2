@@ -1,3 +1,46 @@
+### <div align="center"><img src="https://github.com/chilucdiep/vroom2/blob/main/images/Logo.svg" width="60%"></div><br />
+### <div align="center"><img src="https://github.com/chilucdiep/vroom2/blob/main/images/ezgif.com-gif-maker.gif" width="100%"></div>
+
+# About
+
+Vroom2 is a Slingshot vehicle rental company with the mission to provide an unique and exhilarating experience to their customers.  
+As a freelancer, I was responsible for defining business requirements & brand strategy, translating it in design and implementing it for deployment.
+
+#### 👉 [Take a look here](https://vroom2.vercel.app/)
+#### 👉 [Figma design here](https://www.figma.com/file/VvflnQx7wd5uHKjcEVxGSs/Vroom-2?node-id=0%3A1)
+
+# Table of Contents
+
+1. [Technologies Used](#technologies)
+2. [App Features](#features)
+3. [Future Improvements](#improvements)
+4. [About the Developer](#about-me)
+5. [Deployment](#deployment)
+
+
+## <a name="technologies"></a>Technologies Used
+- React
+- TypeScript
+- HTML
+- SCSS
+- [Next.js](https://nextjs.org//)
+
+## <a name="features"></a>App Features
+
+- Users can browse through the [Home](https://vroom2.vercel.app/) and [About](https://vroom2.vercel.app/about) pages to learn more about the company and what they offer.
+- Users can read other customer's reviews and a FAQ for additional important information.
+
+## <a name="improvements"></a>Future Improvements
+
+- Add a booking feature for a better user experience and a easier way to rent a Slingshot vehicule.
+- Add beautiful pictures on the website and url thumbnail
+
+## <a name="about-me"></a>About The Developer
+
+Hi! 👋 I'm Chi-Luc, a Frontend Developer currently working as a UX Designer in the Usage Analytics team at Coveo. I love to build accessible and easy to use UI's to solve real world problems.
+
+## <a name="deployment"></a>Deployment
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
