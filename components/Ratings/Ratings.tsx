@@ -9,8 +9,8 @@ interface RatingsProps {
 }
 
 export function Ratings({ stars }: RatingsProps) {
-  const starArray = [];
   const MAX_STARS = 5;
+  const starArray = [];
 
   for (let i = 0; i < Math.floor(stars); i++) {
     starArray.push(StarFilledIcon);

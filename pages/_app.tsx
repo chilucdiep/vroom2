@@ -1,13 +1,13 @@
-import { Layout } from "../components/Layout";
-import "../styles/globals.scss";
+import Head from "next/head";
 import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
+import { Layout } from "../components/Layout";
+import "../styles/globals.scss";
+
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
   );
 }
-
-export default MyApp;
