@@ -26,7 +26,7 @@ export default function Hero() {
           </div>
         </div>
         <div className={styles.Image}>
-          <Image src={HeroImage} alt="Slingshot" height={800} />
+          <Image src={HeroImage} alt="Slingshot" height={700} />
         </div>
       </section>
       <section className={styles.SocialProof}>
