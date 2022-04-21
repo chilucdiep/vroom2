@@ -4,8 +4,6 @@ import { URL } from "../../utils/constants/url";
 import { Button } from "../Button";
 
 import HeroImage from "../../images/HeroImage.svg";
-import StarFilledIcon from "../../images/StarFilledIcon.svg";
-import StarHalfIcon from "../../images/StarHalfIcon.svg";
 import styles from "./Home.module.scss";
 import { Ratings } from "../Ratings";
 
