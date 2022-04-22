@@ -8,6 +8,8 @@ export default function HomePage() {
       <Head>
         <title>Vroom 2 | The Slingshot Experience</title>
         <meta name="description" content="Book the Slingshot experience!" />
+        <meta property="og:description" content="Book the Slingshot experience" />
+        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
       </Head>
 
       <Home />
