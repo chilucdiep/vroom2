@@ -3,14 +3,14 @@ import Image from "next/image";
 import { Button } from "../Button";
 import { URL } from "../../utils/constants/url";
 
-import Img from "../../images/Img.png";
+import InfoImg from "../../images/InfoImg.svg";
 import styles from "./Home.module.scss";
 
 export default function Info() {
   return (
     <section className={styles.Info}>
       <section className={styles.InfoContainer}>
-        <Image src={Img} alt="Adventure" height={1000} width={800} />
+        <Image src={InfoImg} alt="Adventure" height={1000} width={800} />
         <div className={styles.Right}>
           <h1>Your adventure awaits!</h1>
           <p>
