@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import { About } from "../components/About";
+import Thumbnail from "../images/Thumbnail.svg";
 
 export default function AboutPage() {
   return (
@@ -12,10 +13,7 @@ export default function AboutPage() {
           property="og:description"
           content="Book the Slingshot experience"
         />
-        <meta
-          property="og:image"
-          content="https://ia.media-imdb.com/images/rock.jpg"
-        />
+        <meta property="og:image" content={Thumbnail} />
       </Head>
       <About />
     </div>
