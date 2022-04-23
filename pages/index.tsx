@@ -18,7 +18,7 @@ export default function HomePage() { console.log(Thumbnail)
           property="og:url"
           content={router.pathname}
         /> */}
-        <meta property="og:image" content='https://www.vroom2.ca/public/Thumbnail.png' />
+        <meta property="og:image" content='https://raw.githubusercontent.com/chilucdiep/vroom2/main/public/Thumbnail.png' />
       </Head>
 
       <Home />

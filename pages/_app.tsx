@@ -7,12 +7,12 @@ import "../styles/globals.scss";
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
+      {/* <Head>
         <meta
           property="og:image"
           content="https://www.vroom2.ca/public/Thumbnail.png"
         />
-      </Head>
+      </Head> */}
 
       <Layout>
         <Component {...pageProps} />
