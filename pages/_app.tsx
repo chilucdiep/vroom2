@@ -7,12 +7,16 @@ import "../styles/globals.scss";
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* <Head>
+      <Head>
+        <meta
+          property="og:description"
+          content="Book the Slingshot experience"
+        />
         <meta
           property="og:image"
-          content="https://www.vroom2.ca/public/Thumbnail.png"
+          content="https://raw.githubusercontent.com/chilucdiep/vroom2/main/public/Thumbnail.png"
         />
-      </Head> */}
+      </Head>
 
       <Layout>
         <Component {...pageProps} />
