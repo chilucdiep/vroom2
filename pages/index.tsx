@@ -4,7 +4,7 @@ import router from "next/router";
 import { Home } from "../components/Home";
 import Thumbnail from "../public/Thumbnail.png";
 
-export default function HomePage() {
+export default function HomePage() { console.log(Thumbnail)
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ export default function HomePage() {
           property="og:url"
           content={router.pathname}
         /> */}
-        <meta property="og:image" content={Thumbnail} />
+        <meta property="og:image" content='https://www.vroom2.ca/public/Thumbnail.png' />
       </Head>
 
       <Home />
