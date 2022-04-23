@@ -1,4 +1,5 @@
 import Head from "next/head";
+import router from "next/router";
 
 import { Home } from "../components/Home";
 import Thumbnail from "../images/Thumbnail.svg";
@@ -15,7 +16,7 @@ export default function HomePage() {
         />
         <meta
           property="og:url"
-          content={window.location.pathname + window.location.search}
+          content={router.pathname}
         />
         <meta property="og:image" content={Thumbnail} />
       </Head>
