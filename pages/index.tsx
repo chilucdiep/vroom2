@@ -2,7 +2,7 @@ import Head from "next/head";
 import router from "next/router";
 
 import { Home } from "../components/Home";
-import Thumbnail from "../images/Thumbnail.svg";
+import Thumbnail from "../public/Thumbnail.png";
 
 export default function HomePage() {
   return (
@@ -14,10 +14,10 @@ export default function HomePage() {
           property="og:description"
           content="Book the Slingshot experience"
         />
-        <meta
+        {/* <meta
           property="og:url"
           content={router.pathname}
-        />
+        /> */}
         <meta property="og:image" content={Thumbnail} />
       </Head>
 
