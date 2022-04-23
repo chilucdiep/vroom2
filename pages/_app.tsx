@@ -8,9 +8,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <meta name="description" content="Book the Slingshot experience!" />
         <meta
           property="og:description"
-          content="Book the Slingshot experience"
+          content="Book the Slingshot experience!"
         />
         <meta
           property="og:image"

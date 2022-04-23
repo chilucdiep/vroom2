@@ -1,23 +1,10 @@
 import Head from "next/head";
-import router from "next/router";
-
-import Thumbnail from "../public/Thumbnail.png";
 
 export default function AboutPage() {
   return (
     <>
       <Head>
         <title>Vroom 2 | Book your Slingshot!</title>
-        <meta name="description" content="Book the Slingshot experience!" />
-        <meta
-          property="og:description"
-          content="Book the Slingshot experience"
-        />
-        {/* <meta
-          property="og:url"
-          content={router.pathname}
-        /> */}
-        {/* <meta property="og:image" content={Thumbnail} /> */}
       </Head>
 
       <div style={{ height: "68vh", display: "grid", placeContent: "center" }}>
