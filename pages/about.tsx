@@ -13,6 +13,10 @@ export default function AboutPage() {
           property="og:description"
           content="Book the Slingshot experience"
         />
+        <meta
+          property="og:url"
+          content={window.location.pathname + window.location.search}
+        />
         <meta property="og:image" content={Thumbnail} />
       </Head>
       <About />

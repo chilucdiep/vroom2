@@ -12,8 +12,13 @@ export default function AboutPage() {
           property="og:description"
           content="Book the Slingshot experience"
         />
+        <meta
+          property="og:url"
+          content={window.location.pathname + window.location.search}
+        />
         <meta property="og:image" content={Thumbnail} />
       </Head>
+
       <div style={{ height: "68vh", display: "grid", placeContent: "center" }}>
         <h1 className="BigTitle">Coming soon!</h1>
         <p>
