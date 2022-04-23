@@ -17,7 +17,7 @@ export default function AboutPage() {
           property="og:url"
           content={router.pathname}
         /> */}
-        <meta property="og:image" content={Thumbnail} />
+        {/* <meta property="og:image" content={Thumbnail} /> */}
       </Head>
 
       <div style={{ height: "68vh", display: "grid", placeContent: "center" }}>
