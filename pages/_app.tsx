@@ -43,8 +43,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             },
             exitState: {
               clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
-              backgroundImage:
-                "https://raw.githubusercontent.com/chilucdiep/vroom2/main/public/Thumbnail.png",
               transition: { duration: 0.5 },
             },
           }}
