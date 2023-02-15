@@ -5,12 +5,68 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import styles from "../About/About.module.scss";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+import Typewriter from "typewriter-effect";
 
 export default function Faq() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const controls = useAnimation();
+
+  const firstVariant = {
+    hidden: { y: 40, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        delay: 0.5,
+      },
+    },
+  };
+  const secVariant = {
+    hidden: { y: 1000, opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1.6,
+        delay: 0.8,
+      },
+    },
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+    if (!isInView) {
+      controls.start("hidden");
+    }
+  }, [controls, isInView]);
+
   return (
     <section className={styles.Faq}>
-      <h1 className={styles.FaqTitle}>
-        You ask, We <span className="Gradient">answer</span>
+      <h1 className={styles.FaqTitle} ref={ref}>
+        <Typewriter
+          options={{
+            strings: "You ask,",
+            autoStart: true,
+            delay: 50,
+            cursor: "",
+          }}
+        />
+        <motion.div variants={firstVariant} initial="hidden" animate={controls}>
+          We{" "}
+          <motion.span
+            className="Gradient"
+            variants={secVariant}
+            initial="hidden"
+            animate={controls}
+          >
+            answer
+          </motion.span>
+        </motion.div>
       </h1>
       <div>
         <Question

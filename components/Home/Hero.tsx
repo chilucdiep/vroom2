@@ -6,12 +6,41 @@ import { Button } from "../Button";
 import HeroImage from "../../images/HeroImage.svg";
 import styles from "./Home.module.scss";
 import { Ratings } from "../Ratings";
+import { motion } from "framer-motion";
 
 export default function Hero() {
+  const textVariant = {
+    hidden: { x: -140, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+      },
+    },
+  };
+
+  const imgVariant = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+        delay: 0.3,
+      },
+    },
+  };
+
   return (
     <section className={styles.Hero}>
       <section className={styles.HeroContent}>
-        <div className={styles.Left}>
+        <motion.div
+          className={styles.Left}
+          variants={textVariant}
+          initial="hidden"
+          animate="visible"
+        >
           <h1 className="BigTitle">
             EXPERIENCE THE RUSH, SPEED & POWER OF THE{" "}
             <span className="Gradient">SLINGSHOT</span>
@@ -24,10 +53,15 @@ export default function Hero() {
             <Button label="Go for a ride" route={URL.BOOK} />
             <Button label="Learn more" route={URL.ABOUT} secondary />
           </div>
-        </div>
-        <div className={styles.Image}>
+        </motion.div>
+        <motion.div
+          className={styles.Image}
+          variants={imgVariant}
+          initial="hidden"
+          animate="visible"
+        >
           <Image src={HeroImage} alt="Slingshot" height={750} />
-        </div>
+        </motion.div>
       </section>
       <section className={styles.SocialProof}>
         <Reviews
@@ -58,11 +92,23 @@ interface ReviewsProps {
 }
 
 function Reviews({ stars, name, review }: ReviewsProps) {
+  const reviewsVariant = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: 0.6,
+      },
+    },
+  };
+
   return (
-    <div>
+    <motion.div variants={reviewsVariant} initial="hidden" animate="visible">
       <Ratings stars={stars} />
       <h3>{name}</h3>
       <p>{review}</p>
-    </div>
+    </motion.div>
   );
 }
