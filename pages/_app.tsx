@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     const nodes = document.querySelectorAll(
       "link[rel=stylesheet], style:not([media=x])"
     );
-    copies = [...nodes].map((el) => el.cloneNode(true));
+    copies = Array.from(nodes).map((el) => el.cloneNode(true));
 
     for (let copy of copies) {
       // Remove Next.js' data attributes so the copies are not removed from the DOM in the route
@@ -67,7 +67,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           animate="animateState"
           exit="exitState"
           transition={{
-            duration: 0.1,
+            duration: 0.4,
           }}
           variants={{
             initialState: {
