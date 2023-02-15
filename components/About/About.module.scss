@@ -3,7 +3,7 @@
 .About {
   display: grid;
   place-items: center;
-  margin: 8em 0 5em;
+  margin: 8em auto 5em;
 
   .Hero {
     width: clamp(350px, 90%, 1200px);
@@ -14,13 +14,12 @@
       position: absolute;
       z-index: -1;
       top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      width: 100%;
       opacity: 0.1;
     }
 
     h1 {
-      margin: 0.5em 0 1.5em;
+      margin: 0.5em auto 1.5em;
       max-width: 1100px;
     }
 
