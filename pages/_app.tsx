@@ -42,8 +42,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
               clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
             },
             exitState: {
-              clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
-              transition: { duration: 0.5 },
+              clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
             },
           }}
         >
