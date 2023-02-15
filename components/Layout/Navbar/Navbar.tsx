@@ -11,7 +11,6 @@ import styles from "./Navbar.module.scss";
 
 export function Navbar() {
   const router = useRouter();
-  console.log(router.pathname);
 
   const HomeClasses = classNames({
     [styles.bold]: router.pathname === "/",
