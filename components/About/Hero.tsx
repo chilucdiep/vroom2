@@ -32,7 +32,7 @@ export default function Hero() {
         WE ARE AN EXCLUSIVE EXPERIENCE{" "}
         <span className="Gradient">ACTIVE LIFESTYLE</span> VEHICLE COMPANY
       </h1>
-      <p>
+      <p className="BigCaption">
         Our mission is to provide an unique and exhilarating experience to our
         customers. Our vehicles with will make your journey more exciting than
         your destination.

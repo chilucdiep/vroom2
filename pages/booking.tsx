@@ -12,16 +12,16 @@ export default function AboutPage() {
         style={{
           display: "grid",
           placeContent: "center",
-          gap: "8em",
+          gap: "6em",
           textAlign: "center",
-          margin: "6em",
+          margin: "5em",
         }}
       >
         <div
           style={{
             display: "grid",
             placeContent: "center",
-            gap: "2em",
+            gap: "1.5em",
             maxWidth: "750px",
             margin: "auto",
           }}
