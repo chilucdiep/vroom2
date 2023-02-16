@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Booking } from "../components/Booking";
 
 export default function AboutPage() {
   return (
@@ -9,11 +10,11 @@ export default function AboutPage() {
 
       <div
         style={{
-          height: "90vh",
           display: "grid",
           placeContent: "center",
-          gap: "5em",
+          gap: "8em",
           textAlign: "center",
+          margin: "6em",
         }}
       >
         <div
@@ -22,32 +23,24 @@ export default function AboutPage() {
             placeContent: "center",
             gap: "2em",
             maxWidth: "750px",
+            margin: "auto",
           }}
         >
           <h1 className="BigTitle">Book your Slingshot today!</h1>
-          <h3>
-            Call us at 438-700-9091 or contact us via email at
-            vroom2rental@gmail.com
+          <h3
+            style={{
+              margin: "auto",
+              maxWidth: "550px",
+              fontWeight: "normal",
+              lineHeight: "1.5",
+            }}
+          >
+            Contact us via email at <strong>vroom2rental@gmail.com</strong> or
+            call us at <strong>438-700-9091</strong>
           </h3>
         </div>
-        <div
-          style={{
-            display: "grid",
-            gap: "1em",
-            textAlign: "left",
-          }}
-        >
-          <h4>Pricing:</h4>
-          <p>
-            <strong>weekday:</strong> 270$/day
-            <br />
-            <strong>weekend:</strong> 300$/day
-            <br />
-            <strong>3 days or more:</strong> 250$/day on weekdays and 270$/day
-            on weekends
-          </p>
-        </div>
-        <h3>Complete online booking system coming soon!</h3>
+        <Booking />
+        <h1>Complete online booking system coming soon!</h1>
       </div>
     </>
   );

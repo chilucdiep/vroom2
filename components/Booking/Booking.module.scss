@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.Booking {
+  .Toggle {
+    display: flex;
+    background-color: $Grey;
+    max-width: 20em;
+    margin: 0 auto;
+    padding: 0.25em;
+    border-radius: $BorderRadius;
+    margin-bottom: 4em;
+  }
+
+  .FilterButton {
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: $BorderRadius;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .Selected {
+    opacity: 1;
+    background-color: white;
+  }
+}
+
+.PricingCard {
+  background-color: $White;
+  border-radius: $BorderRadius;
+  box-shadow: $Shadow;
+  padding: 3em 2em;
+  display: grid;
+  gap: 2em;
+  text-align: left;
+
+  .Price {
+    p {
+      text-align: center;
+      margin: 1.5em 0 0.5em;
+    }
+
+    span {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-right: 0.2em;
+    }
+  }
+
+  .Details {
+    display: grid;
+    gap: 0.7em;
+    margin-bottom: 1.5em;
+  }
+}
+
+.Preferred {
+  border: 2px solid #8d0e1b;
+}
+
+.Cards {
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+}
