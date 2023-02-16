@@ -28,7 +28,7 @@ export function Features() {
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 0.5,
+        delay: 0.2,
       },
     },
   };
@@ -40,7 +40,7 @@ export function Features() {
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 0.7,
+        delay: 0.4,
       },
     },
   };
@@ -52,7 +52,7 @@ export function Features() {
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 0.9,
+        delay: 0.6,
       },
     },
   };
