@@ -14,7 +14,7 @@ export default function AboutPage() {
           placeContent: "center",
           gap: "6em",
           textAlign: "center",
-          margin: "5em",
+          margin: "5em 0",
         }}
       >
         <div

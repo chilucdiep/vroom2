@@ -1,6 +1,9 @@
 @import "../../styles/variables.scss";
 
 .Booking {
+  width: clamp(350px, 90%, 1200px);
+  margin: 0 auto;
+
   .Toggle {
     display: flex;
     place-content: center;
@@ -56,11 +59,15 @@
 }
 
 .Preferred {
-  border: 1px solid #8d0e1b;
+  border: 2px solid #8d0e1b;
 }
 
 .Cards {
-  display: flex;
+  display: grid;
   gap: 5em;
-  justify-content: center;
+
+  @media (min-width: 700px) {
+    display: flex;
+    justify-content: center;
+  }
 }
